@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/adv-02-python-lambda-7zip-dp.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/adv-02-python-lambda-using-7zip-dp.ts",
   "watch": {
     "include": [
       "**"

@@ -1,8 +1,8 @@
 {
-  "name": "adv-02-python-lambda-7zip-dp",
+  "name": "adv-02-python-lambda-using-7zip-dp",
   "version": "0.1.0",
   "bin": {
-    "adv-02-python-lambda-7zip-dp": "bin/adv-02-python-lambda-7zip-dp.js"
+    "adv-02-python-lambda-using-7zip-dp": "bin/adv-02-python-lambda-using-7zip-dp.js"
   },
   "scripts": {
     "build": "tsc",

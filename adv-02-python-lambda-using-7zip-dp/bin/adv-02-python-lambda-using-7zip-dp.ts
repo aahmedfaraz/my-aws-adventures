@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { Adv02PythonLambda7ZipDpStack } from '../lib/adv-02-python-lambda-7zip-dp-stack';
+import { Adv02PythonLambdaUsing7ZipDpStack } from '../lib/adv-02-python-lambda-using-7zip-dp-stack';
 
 const app = new cdk.App();
-new Adv02PythonLambda7ZipDpStack(app, 'Adv02PythonLambda7ZipDpStack', {
+new Adv02PythonLambdaUsing7ZipDpStack(app, 'Adv02PythonLambdaUsing7ZipDpStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
