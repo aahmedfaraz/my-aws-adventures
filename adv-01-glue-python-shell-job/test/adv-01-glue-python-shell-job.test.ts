@@ -1,5 +1,5 @@
-// import * as cdk from 'aws-cdk-lib';
-// import { Template } from 'aws-cdk-lib/assertions';
+// import { Template } from '@aws-cdk/assertions';
+// import * as cdk from '@aws-cdk/core';
 // import * as Adv01GluePythonShellJob from '../lib/adv-01-glue-python-shell-job-stack';
 
 // example test. To run these tests, uncomment this file along with the
