@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { Adv01HttpToLambdaStack } from '../lib/adv-01-http-to-lambda-stack';
+import { Adv01GluePythonShellJobStack } from '../lib/adv-01-glue-python-shell-job-stack';
 
 const app = new cdk.App();
-new Adv01HttpToLambdaStack(app, 'Adv01HttpToLambdaStack', {
+new Adv01GluePythonShellJobStack(app, 'Adv01GluePythonShellJobStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
