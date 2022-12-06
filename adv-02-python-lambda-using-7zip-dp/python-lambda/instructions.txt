@@ -1,0 +1,6 @@
+To deploy python lambda, follow these steps:
+
+1. Install python packages(dependencies) written inside requirements.txt along with making sure that dependencies should install inside the folder, use command `pip install -r requirements.txt --target .`
+2. Zip Lambda with it's packages, if in linux use (zip -r <output_file> <folder_1> <folder_2> ... <folder_n>) or [(zip -r <output_file> .) inside python lambda folder ].
+3. You have a zipped file like `myPythonLambda.zip` here, Deploy this Zipped file in s3
+4. Provide link of this deployment package inside Lambda Code.
