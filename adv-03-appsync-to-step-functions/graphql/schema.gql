@@ -1,0 +1,34 @@
+type Execution {
+	# input: String
+	output: String
+	# name: String
+	status: String
+	# executionArn: String
+	# startDate: String
+	# stopDate: String
+}
+
+type Mutation {
+	# Start a state machine execution by providing input and name
+	addStudent(step: Int!): Execution
+	getStudent(step: Int!): Execution
+}
+
+# type Subscription {
+# 	onStartExecution: Execution
+# 		@aws_subscribe(mutations: ["addStudent"])
+# }
+
+input StartExecutionInput {
+	input: String!
+}
+
+type Query{
+	listExecutions: [Execution] @deprecated(reason: "Express workflows do not support ListExecutions or DescribeExecution")
+}
+
+schema {
+	query: Query
+	mutation: Mutation
+	# subscription: Subscription
+}
